@@ -47,6 +47,10 @@ img {
     display: flex;
 }
 
+.full {
+    width: 100%;
+}
+
 .big {
     width: 60%;
     min-width: 1000px;
@@ -56,10 +60,17 @@ img {
 .small {
     width: 50%;
     min-width: 900px;
-    margin: 0 auto;
 }
 
+.trisect>* {
+    width: calc(100%  / 3);
+    flex-wrap: wrap;
+}
 
+.bisect>* {
+    width: 50%;
+    flex-wrap: wrap;
+}
 /* ______________
 
 TYPO
@@ -70,10 +81,6 @@ body *{
     font-family: 'Roboto', sans-serif;
     font-size: 1vw;
     line-height: 1.4vw;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* ______________
@@ -105,13 +112,20 @@ main {
 
 }
 
-text-col {
-    flex-grow: 2;
+main section {
+    display: flex;
+    justify-content: center;
 }
 
-img-col {
-    flex-grow: 1;
+.text-col {
+    width: 40%;
 }
+
+.img-col {
+    width: 60%;
+}
+
+
 /* ______________
 
 FOOTER
