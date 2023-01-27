@@ -37,6 +37,7 @@ __________________*/
 .button {
     color: white;
     background-color: var(--blue);
+    padding: 5px 10px;
 }
 
 img {
@@ -101,23 +102,22 @@ header {
     height: 80px;
 }
 
-header nav{
+header nav {
     padding: 0 10px;
-    align-items: center;
+    align-items: stretch;
 }
 
-header ul {
-    list-style-type: none;
+header nav>div {
     display: flex;
-}
-
-header li {
-    padding: 0 20px;
-}
-
-header li a {
-    text-decoration: none;
+    align-items: center;
     color: var(--gray);
+    padding: 0 20px;
+    pointer: ;
+} 
+
+header nav>div:hover {
+    border-bottom: 1px solid var(--gray) ;
+    cursor: pointer;
 }
 
 
