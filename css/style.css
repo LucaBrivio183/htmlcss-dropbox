@@ -94,6 +94,8 @@ header {
     justify-content: space-between;
     align-items: stretch;
     align-content: center;
+    position: fixed;
+    z-index: 999;
 }
 
 header ul {
@@ -117,11 +119,11 @@ main section {
     justify-content: center;
 }
 
-.text-col {
+.small-col {
     width: 40%;
 }
 
-.img-col {
+.big-col {
     width: 60%;
 }
 
@@ -131,3 +133,8 @@ main section {
 FOOTER
 
 __________________*/
+
+footer {
+
+}
+
