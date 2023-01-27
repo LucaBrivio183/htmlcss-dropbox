@@ -12,16 +12,61 @@ __________________*/
 
 /* ______________
 
+DEBUG
+
+__________________*/
+
+.debug *{
+    border: 1px dotted black;
+}
+
+/* ______________
+
 COMMON
 
 __________________*/
 
+:root {
+    --blue: #0061ff;
+    --lblue: #b4d0e7;
+    --bordeaux: #61082b;
+    --lgray: #f5f5f5;
+  }
+  
+.button {
+    color: white;
+    background-color: var(--blue);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.big {
+    width: 60%;
+    min-width: 1000px;
+}
+
+.small {
+    width: 50%;
+    min-width: 900px;
+}
 /* ______________
 
 TYPO
 
 __________________*/
 
+body *{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    line-height: 1.4vw;
+}
 /* ______________
 
 HEADER
