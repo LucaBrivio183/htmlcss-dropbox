@@ -43,19 +43,23 @@ img {
     display: block;
 }
 
-.flex-box {
+.flex-row {
     display: flex;
 }
 
 .big {
     width: 60%;
     min-width: 1000px;
+    margin: 0 auto;
 }
 
 .small {
     width: 50%;
     min-width: 900px;
+    margin: 0 auto;
 }
+
+
 /* ______________
 
 TYPO
@@ -67,11 +71,29 @@ body *{
     font-size: 1vw;
     line-height: 1.4vw;
 }
+
+a {
+    text-decoration: none;
+}
+
 /* ______________
 
 HEADER
 
 __________________*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+}
 
 /* ______________
 
@@ -79,6 +101,17 @@ MAIN
 
 __________________*/
 
+main {
+
+}
+
+text-col {
+    flex-grow: 2;
+}
+
+img-col {
+    flex-grow: 1;
+}
 /* ______________
 
 FOOTER
