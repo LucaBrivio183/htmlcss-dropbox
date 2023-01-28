@@ -38,6 +38,13 @@ __________________*/
     color: white;
     background-color: var(--blue);
     padding: 5px 10px;
+    margin: 25px 0;
+    text-decoration: none;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.button:hover  {
+    cursor: pointer;
 }
 
 img {
@@ -47,6 +54,12 @@ img {
 
 .flex-row {
     display: flex;
+    gap: 50px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;  
 }
 
 .full {
@@ -73,6 +86,7 @@ img {
     width: 50%;
     flex-wrap: wrap;
 }
+
 /* ______________
 
 TYPO
@@ -83,6 +97,30 @@ body *{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 21px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 70px;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 29px;
+    line-height: 41px;
+    margin: 17px 0;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 37px;
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 23px;
+    line-height: 32px;
+    margin: 14px 0;
 }
 
 /* ______________
@@ -100,6 +138,7 @@ header {
     left: 0;
     z-index: 999;
     height: 80px;
+    background-color: white;
 }
 
 header nav {
@@ -112,15 +151,21 @@ header nav>div {
     align-items: center;
     color: var(--gray);
     padding: 0 20px;
-    pointer: ;
 } 
 
 header nav>div:hover {
-    border-bottom: 1px solid var(--gray) ;
+    border-bottom: 2px solid var(--gray) ;
     cursor: pointer;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
 
+p  {
+    margin-bottom: 30px;
+}
 
 /* ______________
 
@@ -129,22 +174,36 @@ MAIN
 __________________*/
 
 main {
-    padding-top: 10vh;
+
 }
 
 main section {
     display: flex;
     justify-content: center;
+    margin: 75px 0;
+}
+
+section:first-child {
+    background-color: var(--lblue);
+    padding-top: 80px;
 }
 
 .small-col {
-    width: 40%;
+    flex-grow: 2;
 }
 
 .big-col {
-    width: 60%;
+    flex-grow: 1;
 }
 
+.fa-arrow-down {
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+#partner-section .small-col{
+    align-self: center;
+}
 
 /* ______________
 
