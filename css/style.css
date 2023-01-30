@@ -41,7 +41,6 @@ __________________*/
     text-decoration: none;
     font-size: 14px;
     text-align: center;
-    display: inline-block;
 }
 
 .button:hover  {
@@ -302,6 +301,7 @@ main section {
 
 #plans .button {
     width: 100%;
+    display: inline-block;
 }
 
 /* find partner section */
