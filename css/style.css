@@ -55,7 +55,6 @@ img {
 
 .flex-row {
     display: flex;
-    gap: 50px;
 }
 
 .flex-col {
@@ -79,14 +78,13 @@ img {
     margin: 0 auto;
 }
 
+
 .trisect>* {
-    width: calc(100%  / 3);
-    flex-wrap: wrap;
+    flex-basis: calc(100%  / 3);
 }
 
 .bisect>* {
-    width: 50%;
-    flex-wrap: wrap;
+    flex-basis: 50%;
 }
 
 p  {
@@ -222,13 +220,29 @@ main section {
 }
 
 
-/* partner section */
+/* find partner section */
 
-#find-partner{
+#partner .button{
     border: 1px solid var(--gray);
     background: none;
     color: var(--gray);
 }
+
+#partner .flex-row {
+    gap: 50px;
+}
+
+/* drop-box info section */
+
+#info-cards .flex-row {
+    flex-wrap: wrap;
+}
+
+#info-cards .flex-col {
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
 
 /* free-trial section */
 
