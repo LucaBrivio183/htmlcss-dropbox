@@ -38,8 +38,8 @@ __________________*/
     color: white;
     background-color: var(--blue);
     padding: 10px 15px;
-    margin: 25px 0;
     text-decoration: none;
+    font-size: 14px;
     max-width: fit-content;
     max-height: fit-content;
 }
@@ -69,13 +69,11 @@ img {
 .big {
     width: 60%;
     min-width: 1000px;
-    margin: 0 auto;
 }
 
 .small {
     width: 50%;
     min-width: 900px;
-    margin: 0 auto;
 }
 
 
@@ -126,8 +124,23 @@ h3 {
     padding: 13px 0;
 }
 
+h4 {
+    font-size: 23px;
+    line-height: 32px;
+    padding: 11px 0;
+}
+    
+h5 {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 0;
+}
 
-
+h6 {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 9px 0;
+}
 
 /* ______________
 
@@ -219,6 +232,47 @@ main section {
     padding: 10px 0;
 }
 
+/* plans section */
+
+#plans .flex-row {
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#plans .flex-col {
+    padding: 30px;
+    gap: 50px;
+}
+
+.plan .user-offer {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray);
+    width: 100%;
+}
+
+.plan {
+    border: 1px solid var(--gray);
+}
+
+#plans .plan span {
+    padding: 10px 0;
+    color: var(--gray);
+}
+
+#plans h6 {
+    font-weight: bold;
+}
+
+#plans .plan li {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.blue {
+    color: var(--blue);
+}
 
 /* find partner section */
 
@@ -243,6 +297,19 @@ main section {
     padding: 25px;
 }
 
+/* companies group section */
+
+#companies .flex-row .bisect {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#companies .flex-row .bisect>* {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50%;
+}
 
 /* free-trial section */
 
@@ -288,6 +355,9 @@ footer {
     background-color: black;
     color: white;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 footer a {
