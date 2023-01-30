@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- /Google font -->
     <!-- Awesome fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,19 +18,19 @@
 <body>
     <!-- header fixed position -->
     <header>
-        <nav class="flex-row">  <!-- nav1 with logo  -->
-            <div id="logo-box">
-            <img src="img/logo-small.png" alt="Logo">   
-            </div>
-            <div id="">Perchè Dropbox</div>
-            <div id="">Funzioni</div>
-            <div id="">Piani e Prezzi</div>
-        </nav>
-        <nav  class="flex-row">  <!-- nav2 with login  -->
-            <div id="">Supporto</div>
-            <div id="">Contatta l'ufficio vendite</div>
-            <div id="">Accedi</div>
-            <div><a href="" class="button">Inizia</a></div>
+        <nav class="flex-row">  <!-- nav -->
+            <ul>
+                <li id="logo-box"><img src="img/logo-small.png" alt="Logo"></li> 
+                <li id=""><a href="">Perchè Dropbox</a></li>
+                <li id=""><a href="">Funzioni</a></li>
+                <li id=""><a href="">Piani e Prezzi</a></li>
+            </ul>
+            <ul>  
+                <li id=""><a href="">Supporto</a></li>
+                <li id=""><a href="">Contatta l'ufficio vendite</a></li>
+                <li id=""><a href="">Accedi</a></li>
+                <li><a href="" class="button">Inizia</a></li>
+            </ul>
         </nav>
     </header>
     <!-- /header fixed position -->
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section > <!-- drop-box info section -->
+        <section id="info-cards" > <!-- drop-box info section -->
             <div class="small">
                 <h2></h2>
                 <div class="flex-row trisect">  <!-- cards wrap -->
@@ -133,9 +133,12 @@
                 </div>   
             </div>
         </section>
-        <section > <!--  info for business section -->
-            <h2></h2>
-            <a href=""></a>
+        <section id="business-info"> <!--  info for business section -->
+            <div class="small">
+                <h2>Più di 500.000 team utilizzano
+                Dropbox Business</h2>
+                <a href="">Scopri di più sui nostri clienti</a>
+            </div>
         </section>
         <section > <!-- company group section -->
             <div class="full trisect">
@@ -161,21 +164,26 @@
                 </div>    
             </div>
         </section>
-        <section > <!-- free trial section -->
+        <section id="free-trial"> <!-- free trial section -->
             <div class="flex-row small">
-                <div class="big-col">
-                    
-                </div>
-                <div class="small-col">
-
-                </div>
+                <h2>Porta Dropbox Business
+                nella tua azienda.</h2>        
+                <a href="" class="button">Inizia la tua prova gratuita</a>
             </div>    
         </section>
-        <section > <!-- faq section -->
+        <section id="faq"> <!-- faq section -->
             <div class="small">
-                <h2></h2>
-                <div  class="flex-row expandable"><!--  div for experimental hoverable menù -->
-                    <span></span>
+                <h2>Domande frequenti</h2>
+                <div class="flex-row expandable"><!--  div for experimental hoverable menù -->
+                    <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                    <i class="fa-solid fa-angle-down"></i> <!-- down arrowhead -->
+                </div>
+                <div class="flex-row expandable"><!--  div for experimental hoverable menù -->
+                    <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                    <i class="fa-solid fa-angle-down"></i> <!-- down arrowhead -->
+                </div>
+                <div class="flex-row expandable"><!--  div for experimental hoverable menù -->
+                    <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
                     <i class="fa-solid fa-angle-down"></i> <!-- down arrowhead -->
                 </div>
             </div>
