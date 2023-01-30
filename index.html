@@ -61,7 +61,7 @@
         <section id="plans"> <!-- choose plan section -->
             <div class="small">
                 <h2>Trova il piano business che fa per te</h2>
-                <div class="flex-row">
+                <div class="radio">
                     <input type="radio" id="monthly-plan"><label for="monthly-plan">Fatturazione mensile</label>
                     <input type="radio" id="annual-plan"><label for="annual-plan">Fatturazione annuale</label>
                 </div>
@@ -69,24 +69,23 @@
                     <div class="plan"> <!-- single user plan -->
                         <div class="user-offer"><i class="fa-solid fa-user"></i>  Singolo</div>
                         <div class="flex-col">
-                            <div class="plan-offer">
+                            <div class="plan-top">
                                 <h3>Professional</h3>
                                 <h6>€ 12.00</h6>
                                 <span>/mese</span>
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-user"></i> 1 utente</li>
-                                <li><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione
+                                <ul>
+                                    <li><i class="fa-solid fa-user"></i> 1 utente</li>
+                                    <li><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione
                                     sicuro</li>
-                                <li><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium
+                                    <li><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium
                                     e condivisione file semplice e
                                     sicura</li>
-                            </ul>
-                            <div class="plan-links">
+                                </ul>
                                 <a href="" class="button">Prova gratis per 30 giorni</a>
                                 <p>Oppure <a href="">acquista ora</a></p>
+                                <hr>
                             </div>
-                            <div class="plan-details">
+                            <div class="plan-bottom">   
                                 <h5>Punti Salienti del piano</h5>
                                 <ul>
                                     <li><i class="fa-solid fa-check blue"></i>Invia file fino a 100 GB con
@@ -100,24 +99,23 @@
                     <div class="plan"> <!-- team user plan -->
                         <div class="user-offer"><i class="fa-solid fa-users"></i>  Team</div>
                         <div class="flex-col">
-                            <div class="plan-offer">
+                            <div class="plan-top">
                                 <h3>Advanced</h3>
                                 <h6>€ 18.00</h6>
                                 <span>/utente/mese</span>
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-users"></i>3 o più utenti</li>
-                                <li><i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il
+                                <ul>
+                                    <li><i class="fa-solid fa-users"></i>3 o più utenti</li>
+                                    <li><i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il
                                     tuo team</li>
-                                <li><i class="fa-solid fa-share-nodes"></i>Sofisticate funzioni di controllo e
+                                    <li><i class="fa-solid fa-share-nodes"></i>Sofisticate funzioni di controllo e
                                     per tenere al sicuro tutti i file del
                                     tuo team</li>
-                            </ul>
-                            <div class="plan-links">
+                                </ul>
                                 <a href="" class="button">Prova gratis per 30 giorni</a>
                                 <p>Oppure <a href="">acquista ora</a></p>
-                            </div>
-                            <div class="plan-details">
+                                <hr>
+                            </div>        
+                            <div class="plan-bottom">    
                                 <h5>Punti Salienti del piano</h5>
                                 <ul>
                                     <li><i class="fa-solid fa-check blue"></i>Nessun limite di spazio per i file</li>
@@ -136,24 +134,23 @@
                     <div class="plan"> <!-- enterprise user plan -->
                         <div class="user-offer"><i class="fa-solid fa-building"></i>  Azienda</div>
                         <div class="flex-col">
-                            <div class="plan-offer">
+                            <div class="plan-top">
                                 <h3>Enterprise</h3>
                                 <h6>Contattaci</h6>
                                 <span>-</span>
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-user"></i>10 o più utenti</li>
-                                <li><i class="fa-solid fa-folder"></i>Soluzioni personalizzabili per la
+                                <ul>
+                                    <li><i class="fa-solid fa-user"></i>10 o più utenti</li>
+                                    <li><i class="fa-solid fa-folder"></i>Soluzioni personalizzabili per la
                                     tua azienda</li>
-                                <li><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per
+                                    <li><i class="fa-solid fa-share-nodes"></i>Assistenza personalizzata per
                                     aiutare gli amministratori in una
                                     gestione su larga scala</li>
-                            </ul>
-                            <div class="plan-links">
-                                <a href="" class="button">Prova gratis per 30 giorni</a>
+                                </ul>                            
+                                <a href="" class="button">Contattaci</a>
                                 <p>Oppure <a href="">acquista ora</a></p>
+                                <hr>    
                             </div>
-                            <div class="plan-details">
+                            <div class="plan-bottom">
                                 <h5>Punti Salienti del piano</h5>
                                 <ul>
                                     <li><i class="fa-solid fa-check blue"></i>Cartelle offline su dispositivi
@@ -166,10 +163,21 @@
                         </div>                         
                     </div>
                 </div>
-                <div  class="plan full">
-
+                <div class="full plan">
+                    <div class="user-offer"><i class="fa-solid fa-building"></i>  Team</div>
+                    <div  class="flex-row full">
+                        <div class="big-col">
+                            <h3>Enterprise</h3>
+                            <h6>Contatta l'ufficio vendite per i prezzi</h6>
+                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su
+                                qualsiasi scala.</p>
+                        </div>
+                        <div class="small-col">
+                            <a href="" class="button">Contatta l'ufficio vendite</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>    
         </section>
         <section id="partner"> <!-- find partner section -->
             <div class="flex-row small">
