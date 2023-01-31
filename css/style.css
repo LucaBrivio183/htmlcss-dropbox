@@ -249,7 +249,9 @@ main section {
 
 .fa-arrow-down {
     font-size: 50px;
-    padding: 5px 0;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
 }
 
 /* plans section */
@@ -436,13 +438,16 @@ main section {
 
 /* faq section */
 
-#faq .w-50>* {
-    border-bottom: 1px solid var(--gray);
-}
 
 #faq .flex-row {   
     align-content:center;
     align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+#faq h2 {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 50px;
 }
 
 /* ______________
@@ -455,27 +460,30 @@ footer {
     background-color: black;
     color: white;
     padding: 50px 0;
-    font-size: 14px;
 }
+
+footer .flex-row:first-child {
+    margin-bottom: 50px;
+} 
 
 footer a {
     color: inherit;
     text-decoration: none;
 }
 
-footer .flex-row {
-    padding: 100px 20px;
+footer ul {
+    margin-top: 30px;
 }
 
-footer .flex-col {
+footer li  {
+    padding: 15px 0;
     font-size: 14px;
-    gap: 10px;
-    padding: 20px 0;
 }
 
 #language {
     font-size: 12px;
     width: 130px;
+    color: var(--gray)
 }
 
 #language .flex-row {
