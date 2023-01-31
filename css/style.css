@@ -446,10 +446,23 @@ footer a {
     text-decoration: none;
 }
 
-footer .flex-row {
+footer .w-60>.flex-row {
     padding: 100px 20px;
 }
 
 footer .flex-col {
+    font-size: 14px;
     gap: 10px;
+    padding: 20px 0;
+}
+
+#language {
+    font-size: 12px;
+    width: 130px;
+}
+
+#language .flex-row {
+    gap: 5px;
+    padding: 50px 0;
+    align-items: center;
 }
