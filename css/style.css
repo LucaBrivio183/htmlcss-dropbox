@@ -257,16 +257,19 @@ main section {
 /* plans section */
 
 #plans .flex-row {
-    margin: 30px 0;
+    margin: 50px 0;
+}
+
+#plans .full>.flex-row {
+    margin: 0;
 }
 
 #plans hr {
     width: 50px;
 }
 
-.radio {
-    display: flex;
-    gap: 10px;
+#plans .radio {
+    gap: 35px;
 }
 
 .user-offer {
@@ -331,9 +334,12 @@ main section {
     gap: 50px;
 }
 
+#partner .flex-col {
+    justify-content: center;
+}    
 /* drop-box info section */
 
-#info-cards .flex-row{
+#info-cards .flex-row {
     padding-top: 20px;
 }
 
@@ -342,6 +348,7 @@ main section {
 #business-info h2 {
     margin: 50px 0;
     font-size: 50px;
+    line-height: 70px;
 }
 
 
@@ -476,7 +483,7 @@ footer ul {
 }
 
 footer li  {
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 14px;
 }
 
