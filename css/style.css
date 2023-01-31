@@ -37,10 +37,11 @@ __________________*/
 .button {
     color: white;
     background-color: var(--blue);
-    padding: 10px 15px;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 14px;
     text-align: center;
+    min-width: fit-content;
 }
 
 .button:hover  {
@@ -61,27 +62,33 @@ img {
     flex-direction: column;  
 }
 
+.justify-beetween {
+    justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
 .full {
     width: 100%;
 }
 
-.big {
-    width: 60%;
-    min-width: 1000px;
+
+.w-30 {
+    width: 30%;
 }
 
-.small {
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
     width: 50%;
-    min-width: 900px;
 }
 
-
-.trisect>* {
-    flex-basis: calc(100%  / 3);
-}
-
-.bisect>* {
-    flex-basis: 50%;
+.w-60 {
+    width: 60%;
 }
 
 p  {
@@ -201,22 +208,16 @@ main {
 main section {
     display: flex;
     justify-content: center;
-    margin: 75px 0;
+    margin: 150px 0;
 }
 
-.small-col {
-    width: 40%;
-}
-
-.big-col {
-    width: 60%;
-}
 
 /* jumbotron section */
 
 #jumbotron {
     background-color: var(--lblue);
     padding-top: 80px;
+    margin-top: 0;
 }
 
 #jumbotron img {
@@ -240,15 +241,6 @@ main section {
 
 #plans .flex-row {
     margin: 30px 0;
-    gap: 50px;
-}
-
-#plans .flex-col, #plans .big-col, #plans .small-col {
-    padding: 30px;
-}
-
-#plans .trisect .flex-col {
-    gap: 50px;
 }
 
 #plans hr {
@@ -267,6 +259,10 @@ main section {
     width: 100%;
 }
 
+#plans .flex-col  {
+    padding: 20px;
+}
+
 .plan {
     border: 1px solid var(--gray);
 }
@@ -282,6 +278,7 @@ main section {
 
 #plans .plan ul {
     padding: 30px 0;
+    min-height: 250px;
 }
 
 #plans .plan li {
@@ -318,13 +315,8 @@ main section {
 
 /* drop-box info section */
 
-#info-cards .flex-row {
-    flex-wrap: wrap;
-}
-
-#info-cards .flex-col {
-    justify-content: space-evenly;
-    padding: 25px;
+#info-cards .flex-row{
+    padding-top: 20px;
 }
 
 /* companies group section */
@@ -365,12 +357,11 @@ main section {
 
 /* faq section */
 
-#faq .small>* {
+#faq .w-50>* {
     border-bottom: 1px solid var(--gray);
 }
 
-#faq .small .expandable {
-    justify-content: space-between;
+#faq .flex-row {   
     align-content:center;
     align-items: center;
 }
@@ -388,6 +379,7 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: 14px;
 }
 
 footer a {
@@ -396,8 +388,7 @@ footer a {
 }
 
 footer .flex-row {
-    padding: 100px 0;
-    justify-content: space-between;
+    padding: 100px 20px;
 }
 
 footer .flex-col {
