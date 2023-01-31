@@ -37,9 +37,9 @@ __________________*/
 .button {
     color: white;
     background-color: var(--blue);
-    padding: 10px 30px;
+    padding: 10px 2vw;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875vw;
     text-align: center;
     width: fit-content;
     max-height: fit-content;
@@ -189,7 +189,7 @@ header {
 }
 
 header nav {
-    padding: 0 10px;
+    padding: 0 0.62vw;
     justify-content: space-between;
     width: 100%;
 }
@@ -202,7 +202,7 @@ header nav>ul {
 header nav ul>li{
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1.25vw;
     color: var(--gray);
 }
 
@@ -265,7 +265,7 @@ main section {
 }
 
 #plans hr {
-    width: 50px;
+    width: 3.125vw;
 }
 
 #plans .radio {
@@ -296,6 +296,10 @@ main section {
     font-weight: bold;
 }
 
+.plan-bottom {
+    margin-top: 50px;
+}
+
 #plans .plan ul {
     padding: 30px 0;
     min-height: 250px;
@@ -305,7 +309,7 @@ main section {
     display: flex;
     gap: 5px;
     margin: 10px 0;
-    font-size: 0.75vw;
+    font-size: 1vw;
 }
 
 .blue {
@@ -313,7 +317,7 @@ main section {
 }
 
 #plans p {
-    font-size: 0.875vw;
+    font-size: 1vw;
 }
 
 #plans .plan-top .button {
@@ -331,7 +335,7 @@ main section {
 }
 
 #partner .flex-row {
-    gap: 50px;
+    gap: 3.125vw;
 }
 
 #partner .flex-col {
@@ -369,7 +373,7 @@ main section {
 
 #companies .w-33 hr {
     width: 15%;
-    margin: 40px 0 0;
+    margin-top: 40px;
 }
 
 #companies small {
@@ -389,7 +393,7 @@ main section {
 
 #designit-logo {
     background-color: #a2d39b;
-    border: 15px solid #d1e9cd;
+    border: 1vw solid #d1e9cd;
 }
 
 #arizona_state_university-logo {
@@ -494,7 +498,7 @@ footer li  {
 }
 
 #language .flex-row {
-    gap: 5px;
+    gap: 0.31vw;
     padding: 50px 0;
     align-items: center;
 }
